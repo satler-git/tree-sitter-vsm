@@ -1,0 +1,55 @@
+==========
+Imm f
+==========
+imm f"-1.0" $ln0
+---
+(source_file
+        (imm_statement
+                (immudate_num)
+                (ptr)))
+==========
+Imm h
+==========
+imm h"-1.0" $ln0
+---
+(source_file
+        (imm_statement
+                (immudate_num)
+                (ptr)))
+==========
+Imm f with special ptr
+==========
+imm f"-1.0" $lm[1, 2, 3, 4]
+---
+(source_file
+        (imm_statement
+                (immudate_num)
+                (ptr)))
+=========
+Imm f with special ptr(v)
+=========
+imm f"-1.0" $lm0v2
+---
+(source_file
+        (imm_statement
+                (immudate_num)
+                (ptr)))
+=========
+Imm i
+=========
+imm i"-1" $ln0
+---
+(source_file
+        (imm_statement
+                (immudate_num)
+                (ptr)))
+=========
+Imm ui
+=========
+imm ui"1" $ln0
+---
+(source_file
+        (imm_statement
+                (immudate_num)
+                (ptr)))
+
