@@ -1,11 +1,78 @@
 [
   {
-    "type": "source_file",
+    "type": "imm_statement",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "immudate_num",
+          "named": true
+        },
+        {
+          "type": "ptr",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "immudate_num",
     "named": true,
     "fields": {}
   },
   {
-    "type": "hello",
+    "type": "ptr",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "source_file",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "imm_statement",
+          "named": true
+        },
+        {
+          "type": "quit_statement",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "\n",
     "named": false
+  },
+  {
+    "type": ",",
+    "named": false
+  },
+  {
+    "type": "[",
+    "named": false
+  },
+  {
+    "type": "]",
+    "named": false
+  },
+  {
+    "type": "imm",
+    "named": false
+  },
+  {
+    "type": "line_comment",
+    "named": true
+  },
+  {
+    "type": "quit_statement",
+    "named": true
   }
 ]
