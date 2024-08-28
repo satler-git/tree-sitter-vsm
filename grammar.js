@@ -4,8 +4,19 @@
 module.exports = grammar({
   name: 'vsm',
 
+  extras: $ => [
+    /\s+/,
+    $.line_comment,
+  ],
+
   rules: {
     // TODO: add the actual grammar rules
-    source_file: $ => 'hello'
+    source_file: $ => repeat(seq($._statement, optional('\n'))),
+
+    line_comment: $ => token(seq(optional(/\s*/), '#', /.*/)),
+
+    _statement: $ => choice(
+      // TODO:
+    ),
   }
 })
