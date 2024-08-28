@@ -17,6 +17,8 @@ module.exports = grammar({
 
     _statement: $ => choice(
       // TODO:
+      $.quit_statement,
     ),
+    quit_statement: $ => 'quit',
   }
 })

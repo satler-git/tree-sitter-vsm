@@ -7,3 +7,11 @@ Line comment
     (line_comment))
 
 
+==========
+Line comment with quit
+==========
+quit # This is a comment
+---
+(source_file
+        (quit_statement)
+        (line_comment))
