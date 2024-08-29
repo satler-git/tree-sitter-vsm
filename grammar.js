@@ -51,6 +51,8 @@ module.exports = grammar({
       seq(/(ui|us)"/, $._num, /"/),
     ),
 
+    tag: $ => /i[0-9A-Fa-f][0-9A-Fa-f]/,
+
     imm_statement: $ => seq('imm', $.immudate_num, $.ptr)
   }
 })
